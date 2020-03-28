@@ -136,12 +136,43 @@ body {
 }
 body {
   padding: 30px;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   background-color: #ebf0fa;
 }
 @media screen and (max-width: 500px) {
   body {
     padding: 5px;
   }
+}
+#formContainer {
+  background-color: #46494f;
+  padding: 25px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  display: none;
+}
+#formContainer .form {
+  display: flex;
+  flex-direction: column;
+}
+#formContainer .form .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+#formContainer .form .buttons .close,
+#formContainer .form .buttons .send {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+#formContainer .form .buttons .close:hover,
+#formContainer .form .buttons .send:hover {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
 }
 .fullwidth-background {
   background-color: #85a3e0;
@@ -207,6 +238,9 @@ body {
   padding: 1rem 0px;
   display: flex;
   justify-content: space-evenly;
+}
+.content .con-bot .skills ul {
+  list-style: circle;
 }
 .content .con-top {
   display: flex;

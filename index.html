@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet/less" type="text/css" href="less/index.less"/>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="JS/index.js"></script>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,10 +20,27 @@
   <div class="heading fullwidth-background">
 
     <nav>
-      <a class="home" href="#">Home</a>
-      <a class="home" href="#">About</a>
-      <a class="home" href="#">References</a>
-      <a class="home" href="#">Contact</a>
+      <a id="homeLink" href="#">Home</a>
+      <a id="aboutLink" href="#">About</a>
+      <a id="referencesLink" href="#">References</a>
+      <a id="contactLink" href="#" onclick="displayForm()">Contact</a>
+
+        <div id="formContainer">
+
+          <form class="form" id="contactForm">
+            name:<input></input><br>
+            Company:<input></input><br>
+            Message:<textarea></textarea>
+            <div class="buttons">
+              <div class="close" onclick="hideForm()">Close</div>
+              <div class="send" onclick="hideForm()">Send</div>
+            </div>
+
+          </form>
+
+        </div>
+
+          
     </nav>
 
     <h1>Sawyer Pearson<br><span class="h1-bot">full stack web developer</span></h1>
@@ -49,6 +68,8 @@
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
+          <li>Managment</li>
+          <li>Call Center Analytics</li>
         </ul>
       </section>
   
