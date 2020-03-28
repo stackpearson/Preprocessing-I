@@ -58,13 +58,24 @@ html, body {
 }
 body{
 	padding:30px;
+	background-color: #ebf0fa;
 	@media screen and (max-width: 500px){
 		padding: 5px;
 	}
 }
 
 @boxFill: #d3d3d3;
+@remSize: 1.15rem;
+@boldFont: 900;
 
+.fullwidth-background{
+	background-color: #85a3e0;
+	padding: 10px;
+	margin: 0px -30px;
+		@media screen and (max-width: 500px){
+			margin: 0px -5px;
+		}
+}
 .heading{
 	display:flex;
 	justify-content: space-evenly;
@@ -101,11 +112,58 @@ body{
 	}
 }
 .content{
+	max-width: 750px;
+	margin: 0 auto;
 	padding-top: 25px;
 	display:flex;
 	flex-direction: column;
+	
+	h2{
+		font-size: 2rem;
+		padding: 10px;
+		text-align:center
+	}
 	.con-bot{
+		padding:1rem 0px;
 		display:flex;
+		justify-content:space-evenly;
+	}
+	.con-top{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		@media screen and (max-width: 600px) {
+			display:block;
+		}
+		
+		.intro{
+			padding: 25px;
+		}
+		img{
+			@media screen and (max-width: 600px) {
+				display:none;
+			}
+		}
+	}
+	
+}
+
+footer{
+	.fullwidth-background();
+	nav{
+		display:flex;
+		justify-content: space-evenly;
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		a{
+			font-size: @remSize;
+			font-weight: @boldFont;
+			display: block;
+			padding: 5px;
+		}
 	}
 }
 
