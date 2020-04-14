@@ -54,6 +54,150 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+body{
+	padding:30px;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	background-color: #ebf0fa;
+	@media screen and (max-width: 500px){
+		padding: 5px;
+	}
+}
+
+@boxFill: #d3d3d3;
+@remSize: 1.15rem;
+@boldFont: 900;
+@border: 1px solid black;
+#formContainer{
+	background-color: rgb(70, 73, 79, .8);
+	padding: 25px;
+	position: absolute;
+	top: 25%;
+	left: 35%;
+	display:none;
+
+	.form{
+		display:flex;
+		flex-direction: column;
+		.buttons{
+			display:flex;
+			justify-content: space-evenly;
+			padding: 15px;
+
+			.close, .send{
+				border: @border;
+				padding: 5px;
+				border-radius: 5px;
+			}
+			.close:hover, .send:hover{
+				background-color:black;
+				color:white;
+				font-weight: 600;
+				font-size: 20px;
+			}
+		}
+	}
+}
+.fullwidth-background{
+	background-color: #85a3e0;
+	padding: 10px;
+	margin: 0px -30px;
+		@media screen and (max-width: 500px){
+			margin: 0px -5px;
+		}
+}
+.heading{
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+		@media screen and (max-width: 700px){
+			flex-direction: column;
+		}
+
+	h1{
+		font-size: 30px;
+		text-align: center;
+		text-transform: capitalize;
+		@media screen and (max-width: 700px){
+			padding-top: 25px;
+		}
+	}
+
+	nav{
+		padding: 10px;
+		text-transform: uppercase;
+
+		a{
+			text-decoration: none;
+			font-weight: 600;
+			border: 1px solid grey;
+			padding: 5px;
+			background-color: @boxFill;
+			border-radius: 5px;
+			@media screen and (max-width: 500px){
+				font-weight: 400;
+				padding: 2px;
+			}
+		}
+	}
+}
+.content{
+	max-width: 750px;
+	margin: 0 auto;
+	padding-top: 25px;
+	display:flex;
+	flex-direction: column;
+	
+	h2{
+		font-size: 2rem;
+		padding: 10px;
+		text-align:center
+	}
+	.con-bot{
+		padding:1rem 0px;
+		display:flex;
+		justify-content:space-evenly;
+		.skills ul{
+			list-style: circle;
+		}
+	}
+	.con-top{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		@media screen and (max-width: 600px) {
+			display:block;
+		}
+		
+		.intro{
+			padding: 25px;
+		}
+		img{
+			@media screen and (max-width: 600px) {
+				display:none;
+			}
+		}
+	}
+	
+}
+
+footer{
+	.fullwidth-background();
+	nav{
+		display:flex;
+		justify-content: space-evenly;
+		@media screen and (max-width: 700px) {
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		a{
+			font-size: @remSize;
+			font-weight: @boldFont;
+			display: block;
+			padding: 5px;
+		}
+	}
 }
 

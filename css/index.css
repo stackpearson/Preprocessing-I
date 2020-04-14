@@ -1,1 +1,288 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  padding: 30px;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  background-color: #ebf0fa;
+}
+@media screen and (max-width: 500px) {
+  body {
+    padding: 5px;
+  }
+}
+#formContainer {
+  background-color: #46494f;
+  padding: 25px;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  display: none;
+}
+#formContainer .form {
+  display: flex;
+  flex-direction: column;
+}
+#formContainer .form .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+#formContainer .form .buttons .close,
+#formContainer .form .buttons .send {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+#formContainer .form .buttons .close:hover,
+#formContainer .form .buttons .send:hover {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.fullwidth-background {
+  background-color: #85a3e0;
+  padding: 10px;
+  margin: 0px -30px;
+}
+@media screen and (max-width: 500px) {
+  .fullwidth-background {
+    margin: 0px -5px;
+  }
+}
+.heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .heading {
+    flex-direction: column;
+  }
+}
+.heading h1 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 700px) {
+  .heading h1 {
+    padding-top: 25px;
+  }
+}
+.heading nav {
+  padding: 10px;
+  text-transform: uppercase;
+}
+.heading nav a {
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid grey;
+  padding: 5px;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+}
+@media screen and (max-width: 500px) {
+  .heading nav a {
+    font-weight: 400;
+    padding: 2px;
+  }
+}
+.content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.content h2 {
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+}
+.content .con-bot {
+  padding: 1rem 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.content .con-bot .skills ul {
+  list-style: circle;
+}
+.content .con-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .content .con-top {
+    display: block;
+  }
+}
+.content .con-top .intro {
+  padding: 25px;
+}
+@media screen and (max-width: 600px) {
+  .content .con-top img {
+    display: none;
+  }
+}
+footer {
+  background-color: #85a3e0;
+  padding: 10px;
+  margin: 0px -30px;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    margin: 0px -5px;
+  }
+}
+footer nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 700px) {
+  footer nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+footer nav a {
+  font-size: 1.15rem;
+  font-weight: 900;
+  display: block;
+  padding: 5px;
+}
